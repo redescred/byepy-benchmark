@@ -1,0 +1,32 @@
+"""Entry point: python -m csvkit"""
+
+from .formatter import CSVFormatter, TableFormatter
+from .parser import CSVParser
+
+SAMPLE = """name,age,city,active
+Alice,30,London,true
+Bob,25,Manchester,false
+Carol,35,London,true
+Dave,28,Edinburgh,true
+"""
+
+
+def main() -> None:
+    parser = CSVParser().parse(SAMPLE)
+    records = parser.dicts()
+
+    print("=== CSV round-trip ===")
+    print(CSVFormatter().format_dicts(records))
+
+    print("=== Table ===")
+    print(TableFormatter().format_dicts(records))
+
+    print("=== London, sorted by age ===")
+    london = parser.filter_rows(lambda r: r["city"] == "London").sort_by("age")
+    print(TableFormatter().format_dicts(london.dicts()))
+
+    print(f"Total rows: {len(parser)}")
+
+
+if __name__ == "__main__":
+    main()

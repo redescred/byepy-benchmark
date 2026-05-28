@@ -1,0 +1,338 @@
+=== /home/machine/projects/byepy/rounds/007/obfuscated/trivial/factorial.py ===
+globals lookup dict name: llc02eb41770b7ddbf
+lookup entries: {83: 'enumerate', 12258: 'ValueError', 22286: 'range', 62863: 'print'}
+
+--- disassembly ---
+  0           RESUME                   0
+
+  1           LOAD_CONST               0 (<code object <lambda> at 0x7f2e32b61a30, file "<generated>", line 1>)
+              MAKE_FUNCTION
+              STORE_NAME               0 (l03e3c06565264b6f)
+
+ 12           LOAD_CONST               1 (<code object <lambda> at 0x55852bf75730, file "<generated>", line 12>)
+              MAKE_FUNCTION
+              STORE_NAME               1 (lll6d55219e6dad1f99)
+
+ 25           LOAD_NAME                2 (__name__)
+              LOAD_NAME                3 (bytes)
+              PUSH_NULL
+              LOAD_CONST               2 (<code object <lambda> at 0x7f2e32bb5070, file "<generated>", line 25>)
+              MAKE_FUNCTION
+              LOAD_NAME                4 (llc02eb41770b7ddbf)
+              LOAD_SMALL_INT          83
+              BINARY_OP               26 ([])
+              PUSH_NULL
+              LOAD_NAME                3 (bytes)
+              LOAD_ATTR               11 (fromhex + NULL|self)
+              LOAD_CONST               3 ('2821e8edfaf4fef7')
+              CALL                     1
+              CALL                     1
+              GET_ITER
+              CALL                     0
+              CALL                     1
+              LOAD_ATTR               13 (decode + NULL|self)
+              CALL                     0
+              COMPARE_OP              88 (bool(==))
+              POP_JUMP_IF_FALSE       51 (to L3)
+              NOT_TAKEN
+
+ 26           LOAD_NAME                4 (llc02eb41770b7ddbf)
+              LOAD_CONST               4 (22286)
+              BINARY_OP               26 ([])
+              PUSH_NULL
+              LOAD_SMALL_INT          13
+              CALL                     1
+              GET_ITER
+      L1:     FOR_ITER                29 (to L2)
+              STORE_NAME               7 (i)
+
+ 27           LOAD_NAME                4 (llc02eb41770b7ddbf)
+              LOAD_CONST               5 (62863)
+              BINARY_OP               26 ([])
+              PUSH_NULL
+              LOAD_NAME                7 (i)
+              FORMAT_SIMPLE
+              LOAD_CONST               6 ('! = ')
+              LOAD_NAME                0 (l03e3c06565264b6f)
+              PUSH_NULL
+              LOAD_NAME                7 (i)
+              CALL                     1
+              FORMAT_SIMPLE
+              BUILD_STRING             3
+              CALL                     1
+              POP_TOP
+              JUMP_BACKWARD           31 (to L1)
+
+ 26   L2:     END_FOR
+              POP_ITER
+              LOAD_CONST               7 (None)
+              RETURN_VALUE
+
+ 25   L3:     LOAD_CONST               7 (None)
+              RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f2e32b61a30, file "<generated>", line 1>:
+  1           RESUME                   0
+
+  2           LOAD_FAST_BORROW         0 (llI7afa965cc00457b6)
+              LOAD_SMALL_INT           0
+              COMPARE_OP              18 (bool(<))
+              POP_JUMP_IF_FALSE       86 (to L1)
+              NOT_TAKEN
+
+  3           LOAD_GLOBAL              0 (llc02eb41770b7ddbf)
+              LOAD_CONST               1 (12258)
+              BINARY_OP               26 ([])
+              PUSH_NULL
+              LOAD_GLOBAL              3 (bytes + NULL)
+              LOAD_CONST               2 (<code object <lambda> at 0x7f2e32bb4df0, file "<generated>", line 3>)
+              MAKE_FUNCTION
+              LOAD_GLOBAL              0 (llc02eb41770b7ddbf)
+              LOAD_SMALL_INT          83
+              BINARY_OP               26 ([])
+              PUSH_NULL
+              LOAD_GLOBAL              2 (bytes)
+              LOAD_ATTR                5 (fromhex + NULL|self)
+              LOAD_CONST               3 ('111fe6f8fce8c8c9c396d4b7eba7b78482889c92666e317e70540d5a5e2528243e28004c1d0feceaeae4ee')
+              CALL                     1
+              CALL                     1
+              GET_ITER
+              CALL                     0
+              CALL                     1
+              LOAD_ATTR                7 (decode + NULL|self)
+              CALL                     0
+              CALL                     1
+              RAISE_VARARGS            1
+
+  4   L1:     LOAD_FAST_BORROW         0 (llI7afa965cc00457b6)
+              POP_JUMP_IF_NONE         9 (to L2)
+              NOT_TAKEN
+              LOAD_FAST_BORROW_LOAD_FAST_BORROW 0 (llI7afa965cc00457b6, llI7afa965cc00457b6)
+              COMPARE_OP             119 (bool(!=))
+              POP_JUMP_IF_FALSE        3 (to L2)
+              NOT_TAKEN
+
+  5           LOAD_FAST_BORROW         0 (llI7afa965cc00457b6)
+              RETURN_VALUE
+
+  6   L2:     LOAD_FAST_BORROW         0 (llI7afa965cc00457b6)
+              LOAD_SMALL_INT           0
+              COMPARE_OP              88 (bool(==))
+              POP_JUMP_IF_FALSE        3 (to L3)
+              NOT_TAKEN
+
+  7           LOAD_SMALL_INT           1
+              RETURN_VALUE
+
+  8   L3:     LOAD_FAST_BORROW         0 (llI7afa965cc00457b6)
+              POP_JUMP_IF_NONE         9 (to L4)
+              NOT_TAKEN
+              LOAD_FAST_BORROW_LOAD_FAST_BORROW 0 (llI7afa965cc00457b6, llI7afa965cc00457b6)
+              COMPARE_OP             119 (bool(!=))
+              POP_JUMP_IF_FALSE        3 (to L4)
+              NOT_TAKEN
+
+  9           LOAD_FAST_BORROW         0 (llI7afa965cc00457b6)
+              RETURN_VALUE
+
+ 10   L4:     LOAD_FAST_BORROW         0 (llI7afa965cc00457b6)
+              LOAD_GLOBAL              9 (l03e3c06565264b6f + NULL)
+              LOAD_FAST_BORROW         0 (llI7afa965cc00457b6)
+              LOAD_SMALL_INT           1
+              BINARY_OP               10 (-)
+              CALL                     1
+              BINARY_OP                5 (*)
+              RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f2e32bb4df0, file "<generated>", line 3>:
+   3           RETURN_GENERATOR
+               POP_TOP
+       L1:     RESUME                   0
+               LOAD_FAST                0 (.0)
+       L2:     FOR_ITER                44 (to L3)
+               UNPACK_SEQUENCE          2
+               STORE_FAST_STORE_FAST   18 (lIlIIIllIlIIllI, llIllIlIIIIIlll)
+               LOAD_FAST_BORROW         2 (llIllIlIIIIIlll)
+               LOAD_SMALL_INT         116
+               LOAD_FAST_BORROW         1 (lIlIIIllIlIIllI)
+               LOAD_SMALL_INT           7
+               BINARY_OP                5 (*)
+               BINARY_OP                0 (+)
+               LOAD_SMALL_INT           3
+               BINARY_OP                0 (+)
+               LOAD_SMALL_INT         255
+               BINARY_OP                1 (&)
+               BINARY_OP               12 (^)
+               YIELD_VALUE              0
+               RESUME                   5
+               POP_TOP
+               JUMP_BACKWARD           46 (to L2)
+       L3:     END_FOR
+               POP_ITER
+               LOAD_CONST               1 (None)
+               RETURN_VALUE
+
+  --   L4:     CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+               RERAISE                  1
+ExceptionTable:
+  L1 to L4 -> L4 [0] lasti
+
+Disassembly of <code object <lambda> at 0x55852bf75730, file "<generated>", line 12>:
+ 12           RESUME                   0
+
+ 13           LOAD_FAST_BORROW         0 (llcd979ce155943ec5)
+              LOAD_SMALL_INT           0
+              COMPARE_OP              18 (bool(<))
+              POP_JUMP_IF_FALSE       86 (to L1)
+              NOT_TAKEN
+
+ 14           LOAD_GLOBAL              0 (llc02eb41770b7ddbf)
+              LOAD_CONST               1 (12258)
+              BINARY_OP               26 ([])
+              PUSH_NULL
+              LOAD_GLOBAL              3 (bytes + NULL)
+              LOAD_CONST               2 (<code object <lambda> at 0x7f2e32bb48f0, file "<generated>", line 14>)
+              MAKE_FUNCTION
+              LOAD_GLOBAL              0 (llc02eb41770b7ddbf)
+              LOAD_SMALL_INT          83
+              BINARY_OP               26 ([])
+              PUSH_NULL
+              LOAD_GLOBAL              2 (bytes)
+              LOAD_ATTR                5 (fromhex + NULL|self)
+              LOAD_CONST               3 ('111fe6f8fce8c8c9c396d4b7eba7b78482889c92666e317e70540d5a5e2528243e28004c1d0feceaeae4ee')
+              CALL                     1
+              CALL                     1
+              GET_ITER
+              CALL                     0
+              CALL                     1
+              LOAD_ATTR                7 (decode + NULL|self)
+              CALL                     0
+              CALL                     1
+              RAISE_VARARGS            1
+
+ 15   L1:     LOAD_FAST_BORROW         0 (llcd979ce155943ec5)
+              POP_JUMP_IF_NONE         9 (to L2)
+              NOT_TAKEN
+              LOAD_FAST_BORROW_LOAD_FAST_BORROW 0 (llcd979ce155943ec5, llcd979ce155943ec5)
+              COMPARE_OP             119 (bool(!=))
+              POP_JUMP_IF_FALSE        3 (to L2)
+              NOT_TAKEN
+
+ 16           LOAD_FAST_BORROW         0 (llcd979ce155943ec5)
+              RETURN_VALUE
+
+ 17   L2:     LOAD_SMALL_INT           1
+              STORE_FAST               1 (lIlllIllIlIIlIl)
+
+ 18           LOAD_FAST_BORROW         0 (llcd979ce155943ec5)
+              POP_JUMP_IF_NONE         9 (to L3)
+              NOT_TAKEN
+              LOAD_FAST_BORROW_LOAD_FAST_BORROW 0 (llcd979ce155943ec5, llcd979ce155943ec5)
+              COMPARE_OP             119 (bool(!=))
+              POP_JUMP_IF_FALSE        3 (to L3)
+              NOT_TAKEN
+
+ 19           LOAD_FAST_BORROW         0 (llcd979ce155943ec5)
+              RETURN_VALUE
+
+ 20   L3:     LOAD_GLOBAL              0 (llc02eb41770b7ddbf)
+              LOAD_CONST               4 (22286)
+              BINARY_OP               26 ([])
+              PUSH_NULL
+              LOAD_SMALL_INT           2
+              LOAD_FAST_BORROW         0 (llcd979ce155943ec5)
+              LOAD_SMALL_INT           1
+              BINARY_OP                0 (+)
+              CALL                     2
+              GET_ITER
+      L4:     FOR_ITER                11 (to L5)
+              STORE_FAST               2 (llIlIlIlllIlIII)
+
+ 21           LOAD_FAST_BORROW_LOAD_FAST_BORROW 18 (lIlllIllIlIIlIl, llIlIlIlllIlIII)
+              BINARY_OP               18 (*=)
+              STORE_FAST               1 (lIlllIllIlIIlIl)
+              JUMP_BACKWARD           13 (to L4)
+
+ 20   L5:     END_FOR
+              POP_ITER
+
+ 22           LOAD_FAST_BORROW         0 (llcd979ce155943ec5)
+              POP_JUMP_IF_NONE         9 (to L6)
+              NOT_TAKEN
+              LOAD_FAST_BORROW_LOAD_FAST_BORROW 0 (llcd979ce155943ec5, llcd979ce155943ec5)
+              COMPARE_OP             119 (bool(!=))
+              POP_JUMP_IF_FALSE        3 (to L6)
+              NOT_TAKEN
+
+ 23           LOAD_FAST_BORROW         0 (llcd979ce155943ec5)
+              RETURN_VALUE
+
+ 24   L6:     LOAD_FAST_BORROW         1 (lIlllIllIlIIlIl)
+              RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x7f2e32bb48f0, file "<generated>", line 14>:
+  14           RETURN_GENERATOR
+               POP_TOP
+       L1:     RESUME                   0
+               LOAD_FAST                0 (.0)
+       L2:     FOR_ITER                44 (to L3)
+               UNPACK_SEQUENCE          2
+               STORE_FAST_STORE_FAST   18 (llIlIlllIlIllll, llIllIlIIlIIIIl)
+               LOAD_FAST_BORROW         2 (llIllIlIIlIIIIl)
+               LOAD_SMALL_INT         116
+               LOAD_FAST_BORROW         1 (llIlIlllIlIllll)
+               LOAD_SMALL_INT           7
+               BINARY_OP                5 (*)
+               BINARY_OP                0 (+)
+               LOAD_SMALL_INT           3
+               BINARY_OP                0 (+)
+               LOAD_SMALL_INT         255
+               BINARY_OP                1 (&)
+               BINARY_OP               12 (^)
+               YIELD_VALUE              0
+               RESUME                   5
+               POP_TOP
+               JUMP_BACKWARD           46 (to L2)
+       L3:     END_FOR
+               POP_ITER
+               LOAD_CONST               1 (None)
+               RETURN_VALUE
+
+  --   L4:     CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+               RERAISE                  1
+ExceptionTable:
+  L1 to L4 -> L4 [0] lasti
+
+Disassembly of <code object <lambda> at 0x7f2e32bb5070, file "<generated>", line 25>:
+  25           RETURN_GENERATOR
+               POP_TOP
+       L1:     RESUME                   0
+               LOAD_FAST                0 (.0)
+       L2:     FOR_ITER                44 (to L3)
+               UNPACK_SEQUENCE          2
+               STORE_FAST_STORE_FAST   18 (lIllIlIlIIlIIII, lllIIIllIIllIII)
+               LOAD_FAST_BORROW         2 (lllIIIllIIllIII)
+               LOAD_SMALL_INT         116
+               LOAD_FAST_BORROW         1 (lIllIlIlIIlIIII)
+               LOAD_SMALL_INT           7
+               BINARY_OP                5 (*)
+               BINARY_OP                0 (+)
+               LOAD_SMALL_INT           3
+               BINARY_OP                0 (+)
+               LOAD_SMALL_INT         255
+               BINARY_OP                1 (&)
+               BINARY_OP               12 (^)
+               YIELD_VALUE              0
+               RESUME                   5
+               POP_TOP
+               JUMP_BACKWARD           46 (to L2)
+       L3:     END_FOR
+               POP_ITER
+               LOAD_CONST               1 (None)
+               RETURN_VALUE
+
+  --   L4:     CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+               RERAISE                  1
+ExceptionTable:
+  L1 to L4 -> L4 [0] lasti
+

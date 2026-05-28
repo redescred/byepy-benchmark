@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+rounds/*/work/__pycache__/
+rounds/*/obfuscated/*/__pycache__/
+rounds/*/recovered/*/__pycache__/
+rounds/superpowers/

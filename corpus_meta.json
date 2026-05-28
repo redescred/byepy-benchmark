@@ -1,0 +1,56 @@
+{
+  "trivial": {
+    "files": [
+      {
+        "path": "corpus/trivial/factorial.py",
+        "run_as": "script",
+        "stdin": null,
+        "args": [],
+        "check_stdout": true
+      },
+      {
+        "path": "corpus/trivial/fizzbuzz.py",
+        "run_as": "script",
+        "stdin": null,
+        "args": [],
+        "check_stdout": true
+      },
+      {
+        "path": "corpus/trivial/binary_search.py",
+        "run_as": "script",
+        "stdin": null,
+        "args": [],
+        "check_stdout": true
+      }
+    ]
+  },
+  "medium": {
+    "files": [
+      {
+        "path": "corpus/medium/text_stats.py",
+        "run_as": "script",
+        "stdin": null,
+        "args": [],
+        "check_stdout": true
+      },
+      {
+        "path": "corpus/medium/todo_cli.py",
+        "run_as": "script",
+        "stdin": null,
+        "args": [],
+        "check_stdout": true
+      }
+    ]
+  },
+  "hard": {
+    "files": [
+      {
+        "path": "corpus/hard/csvkit",
+        "run_as": "package",
+        "stdin": null,
+        "args": [],
+        "check_stdout": true
+      }
+    ]
+  }
+}

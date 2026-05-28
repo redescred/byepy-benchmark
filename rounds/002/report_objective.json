@@ -1,0 +1,110 @@
+{
+  "trivial": {
+    "files": [
+      {
+        "file": "corpus/trivial/factorial.py",
+        "behavioural": {
+          "pass": true,
+          "original_out": "0! = 1\n1! = 1\n2! = 2\n3! = 6\n4! = 24\n5! = 120\n6! = 720\n7! = 5040\n8! = 40320\n9! = 362880\n10! = 3628800\n11! = 39916800\n12! = 479001600",
+          "recovered_out": "0! = 1\n1! = 1\n2! = 2\n3! = 6\n4! = 24\n5! = 120\n6! = 720\n7! = 5040\n8! = 40320\n9! = 362880\n10! = 3628800\n11! = 39916800\n12! = 479001600",
+          "note": "match"
+        },
+        "ast": {
+          "pass": true,
+          "score": 1.0,
+          "note": "above threshold"
+        }
+      },
+      {
+        "file": "corpus/trivial/fizzbuzz.py",
+        "behavioural": {
+          "pass": true,
+          "original_out": "1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz\n16\n17\nFizz\n19\nBuzz",
+          "recovered_out": "1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz\n16\n17\nFizz\n19\nBuzz",
+          "note": "match"
+        },
+        "ast": {
+          "pass": true,
+          "score": 1.0,
+          "note": "above threshold"
+        }
+      },
+      {
+        "file": "corpus/trivial/binary_search.py",
+        "behavioural": {
+          "pass": true,
+          "original_out": "search(0) -> index 0, value 0\nsearch(15) -> index 5, value 15\nsearch(42) -> index 14, value 42\nsearch(99) -> index 33, value 99\nsearch(7) -> index -1, value not found",
+          "recovered_out": "search(0) -> index 0, value 0\nsearch(15) -> index 5, value 15\nsearch(42) -> index 14, value 42\nsearch(99) -> index 33, value 99\nsearch(7) -> index -1, value not found",
+          "note": "match"
+        },
+        "ast": {
+          "pass": true,
+          "score": 1.0,
+          "note": "above threshold"
+        }
+      }
+    ],
+    "behavioural_pass": true,
+    "ast_pass": true,
+    "readability_pass": null,
+    "readability_score": null
+  },
+  "medium": {
+    "files": [
+      {
+        "file": "corpus/medium/text_stats.py",
+        "behavioural": {
+          "pass": true,
+          "original_out": "Total words        : 60\nUnique words       : 33\nTotal sentences    : 10\nAvg word length    : 3.82\nAvg sentence length: 6.0 words\nFlesch score       : 93.11\nType-token ratio   : 0.55\nHapax legomena     : 22\nTop 10 words:\n  the                  10\n  fox                  5\n  is                   5\n  a                    3\n  wild                 3\n  dog                  2\n  animals              2\n  in                   2\n  home                 2\n  heart                2",
+          "recovered_out": "Total words        : 60\nUnique words       : 33\nTotal sentences    : 10\nAvg word length    : 3.82\nAvg sentence length: 6.0 words\nFlesch score       : 93.11\nType-token ratio   : 0.55\nHapax legomena     : 22\nTop 10 words:\n  the                  10\n  fox                  5\n  is                   5\n  a                    3\n  wild                 3\n  dog                  2\n  animals              2\n  in                   2\n  home                 2\n  heart                2",
+          "note": "match"
+        },
+        "ast": {
+          "pass": true,
+          "score": 0.9753,
+          "note": "above threshold"
+        }
+      },
+      {
+        "file": "corpus/medium/todo_cli.py",
+        "behavioural": {
+          "pass": true,
+          "original_out": "=== All tasks ===\n[ ] (!) #002 Write unit tests [work, coding]\n[ ] (-) #005 Call the dentist [health]\n[ ] ( ) #003 Read a book [personal]\n[x] (!) #004 Fix the login bug [work, coding]\n[x] (-) #001 Buy groceries [home, errands]\n\n=== Pending ===\n[ ] (!) #002 Write unit tests [work, coding]\n[ ] ( ) #003 Read a book [personal]\n[ ] (-) #005 Call the dentist [health]\n\n=== Work tasks ===\n[ ] (!) #002 Write unit tests [work, coding]\n[x] (!) #004 Fix the login bug [work, coding]\n\nStats: 2/5 done, 3 pendi",
+          "recovered_out": "=== All tasks ===\n[ ] (!) #002 Write unit tests [work, coding]\n[ ] (-) #005 Call the dentist [health]\n[ ] ( ) #003 Read a book [personal]\n[x] (!) #004 Fix the login bug [work, coding]\n[x] (-) #001 Buy groceries [home, errands]\n\n=== Pending ===\n[ ] (!) #002 Write unit tests [work, coding]\n[ ] ( ) #003 Read a book [personal]\n[ ] (-) #005 Call the dentist [health]\n\n=== Work tasks ===\n[ ] (!) #002 Write unit tests [work, coding]\n[x] (!) #004 Fix the login bug [work, coding]\n\nStats: 2/5 done, 3 pendi",
+          "note": "match"
+        },
+        "ast": {
+          "pass": true,
+          "score": 1.0,
+          "note": "above threshold"
+        }
+      }
+    ],
+    "behavioural_pass": true,
+    "ast_pass": true,
+    "readability_pass": null,
+    "readability_score": null
+  },
+  "hard": {
+    "files": [
+      {
+        "file": "corpus/hard/csvkit",
+        "behavioural": {
+          "pass": true,
+          "original_out": "=== CSV round-trip ===\nname,age,city,active\nAlice,30,London,True\nBob,25,Manchester,False\nCarol,35,London,True\nDave,28,Edinburgh,True\n\n=== Table ===\n+-------+-----+------------+--------+\n| name  | age | city       | active |\n+-------+-----+------------+--------+\n| Alice | 30  | London     | True   |\n| Bob   | 25  | Manchester | False  |\n| Carol | 35  | London     | True   |\n| Dave  | 28  | Edinburgh  | True   |\n+-------+-----+------------+--------+\n=== London, sorted by age ===\n+-------+-----+---",
+          "recovered_out": "=== CSV round-trip ===\nname,age,city,active\nAlice,30,London,True\nBob,25,Manchester,False\nCarol,35,London,True\nDave,28,Edinburgh,True\n\n=== Table ===\n+-------+-----+------------+--------+\n| name  | age | city       | active |\n+-------+-----+------------+--------+\n| Alice | 30  | London     | True   |\n| Bob   | 25  | Manchester | False  |\n| Carol | 35  | London     | True   |\n| Dave  | 28  | Edinburgh  | True   |\n+-------+-----+------------+--------+\n=== London, sorted by age ===\n+-------+-----+---",
+          "note": "match"
+        },
+        "ast": {
+          "pass": true,
+          "score": 0.9971,
+          "note": "above threshold"
+        }
+      }
+    ],
+    "behavioural_pass": true,
+    "ast_pass": true,
+    "readability_pass": null,
+    "readability_score": null
+  }
+}
